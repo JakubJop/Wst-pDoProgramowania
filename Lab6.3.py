@@ -1,3 +1,15 @@
-def z3(*krotka):
-    print(krotka)
-print(z3(2, 3, 4, 5, 7, 8, 6.39))
+
+def maximum(, *args):
+    if len(args) == 0:
+        return None
+    m = args[0]
+    for a in args[1:]:
+        if m < a:
+            m = a
+    return a
+
+maks = maximum( 1, 3, 4, 10, 5)
+print(maks)
+
+maks = maximum ()
+print(maks)
